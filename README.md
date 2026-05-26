@@ -46,4 +46,4 @@ These are personal study notes and may evolve as I continue learning. Always ref
 
 ## Certificate Target
 
-**__AWS Certificate Cloud Practitioner (CLF-C02)__**
+**_AWS Certificate Cloud Practitioner (CLF-C02)_**
