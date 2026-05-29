@@ -3,11 +3,13 @@
 ## Amazon Elastic Compute Cloud
 
 QUE: what is Amazon Elastic Compute Cloud (EC2)??
-	- is an AWS service that provides resizable virtual servers in the cloud [provides resizable compute capacity in the cloud].
-	- each individual EC2 machine is referred to as an instance
+- is an AWS service that provides resizable virtual servers in the cloud [provides resizable compute capacity in the cloud].
+- each individual EC2 machine is referred to as an instance
+
 Key characteristics:
 - ability to scale up or down based on demand.
 - availability of a varied range of instance type for specialised use class
+
 
 - AWS offers six EC2 instance categories of EC2 instances for specialised workloads:
 	1. general purpose
