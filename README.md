@@ -44,6 +44,6 @@ aws-cloud-practitioner-notes/
 These are personal study notes and may evolve as I continue learning. Always refer to official AWS documentation for production-level guidance.
 
 
-## Certificate Target
+## Certification Target
 
 **_AWS Certificate Cloud Practitioner (CLF-C02)_**
