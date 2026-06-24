@@ -69,3 +69,23 @@ Examples:
 - Glacier is an archival storage solution built on S3. it is optimised for large volume, infrequent and slower retrieval time.
 
 
+## Security And Compliance Automation
+
+1. AWS Security Hub - provides a quick overview into the security posture management, including specific non-compliant items.
+    - checks for security practices across multiple accounts. it aggregates alerts across 60+ AWS security services and partner integrations including AWS Inspectory and GuardDuty
+    - supports remediation by invoking a Lambda function
+
+> checking compliance with a specific standard is as easy as enabling that specific standard in the Security Hub
+
+2. AWS Trusted Advisor - helps observe best practices with an eye toward saving moneny, improving system performance and reliability, and closing security gaps.
+    - helps monitor multiple aspects of governance controls such as cost optimization, availability, and business continuity.
+    - 
+
+![limitations and differences](image-3.png)
+
+3. GuardDuty - detects threats by monitoring AWS accounts and workloads for malicious activity.
+    - scans EC2 instances and S3 buckets for malware, analyzing logs for threat detection without requiring additional infrastructure.
+    - generates detailed findings to help us see and fix potential issues.
+    - workes independently, without affecting resources' performance or availability.
+
+![GuardDuty](image-4.png)
