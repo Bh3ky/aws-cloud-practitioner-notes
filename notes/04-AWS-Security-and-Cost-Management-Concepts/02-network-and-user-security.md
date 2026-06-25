@@ -123,3 +123,32 @@ IAM Identity Center can create or connect workforce users and centrally manage t
 | Best for        | High-level security control     | Broad network control         | Protecting web applications       |  
 
 
+## Compute and data security
+
+![securing customer data](image-9.png)
+
+**Compute security strategies**
+- to keep the EC2 servers secure, it is important to keep the credentials secure e.g., use of SSH keys instead of passwords.
+    - also:
+        - updating OS with latest patches
+        - control access to servers using security groups
+        - use IAM roles instead of stored credentials
+        - use security groups
+
+**Security groups**
+- acts as virtual firewall for EC2 instances to control incoming and outgoing traffic.
+- they allow fine-grained traffic to an from and individual server.
+- NACL rules apply to the entire subnet.
+- security groups are stateful i.e., they remember connection status. also allow outbound traffic by default
+
+**Data security strategies**
+- there are two strategies to secure data at-rest, which is data on hard disks.
+    1. encryption 
+    2. securing S3 buckets
+
+![data security strategies](image-10.png)
+
+**Encryption at-rest**
+- means that the data is locked up and protected when it is stored on a computer or a server.
+- works automatically with storage services like S3 and EBS
+- NOTE: customers can manage encryption keys using AWS Key Management Service (KMS) or bring their own keys and help meet compliance.
