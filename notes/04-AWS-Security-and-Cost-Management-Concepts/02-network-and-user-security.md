@@ -55,3 +55,71 @@
 - AWS Secrets Manager securely manages database credentials and API keys. it automatically rotates secrets to keep them safe.
 - can also encrypt sensitive data
 - it integrates seamlessly with other AWS services for added convenience and security.
+
+
+## Identity and Access Management (IAM)
+
+
+**Question: why does IAM matter??**
+- IAM helps grant permissions and makes access and authorization management simpler.
+
+![who, what, and where?](image-7.png)
+
+- permissions granted to machines are called roles
+- principal is the term used to describe both users and roles.
+    - the authorisation part of IAM make up the "what" and the "where".
+
+- policies are text documents and they specify authorized principals and resoures.
+    - AWS Organizations make up the "where" part of IAM.
+    - NB: in the "where" part, organizational units like "production", "development", or "test" can be defined.
+
+**Users vs. Roles**
+- users have long-term credentials while roles use short-term credentials.
+- NB roles cannot be grouped
+- roles are often assigned to servers which retrieve credentials dynamically from AWS STS.
+
+**Policy**
+- an IAM policy specifies which actions can be performed on a resource.
+
+![policy](image-8.png)
+
+- here we can see that the policy allows all actions to be performed on a single bucket called "awesome-datacamp-user".
+- once a policy is attached to an identity, which can be a user or role, that identity can perform actions specified on the resource.
+
+IAM Identity Center can create or connect workforce users and centrally manage their access to all of their AWS accounts and applications.
+- we can either create new user accounts or connect existing work accounts such as Office 365, Google Apps using single sign-on.
+- access can be granted to multiple AWS accounts which are part of the same organization or external to the organization.
+
+
+## Network Security in AWS
+
+**Question: what is a subnet??**
+- smaller, isolated network inside a larger one.
+
+- a subnet contains multiple devices.
+- a network consists of multiple subnets.
+- a router is used to route traffic between subnets and networks
+- a route table maintains mapping of network addresses that the network links.
+
+**Virtual private cloud**
+- made up of virtual network and other components such as firewall and DNS.
+
+**VPC security**
+- five steps in securing networks in AWS:
+    - subnet design
+    - isolate environments
+    - use Network Access Control Lists (NACL)
+    - firewall and WAF
+    - monitor flow logs
+
+**NACL, firewall, and WAF**
+
+| Feature    | AWS Firewall   | NACL     | AWS WAF    |
+|  ---       |  ---           | ---      |  ---       |
+| Scope      | Regional or VPC-level    | Subnet-level  | Application-level |
+| Statefulness      | Stateful       | Stateless | Stateful  |  
+| Default Rules     | Managed rules available   | Deny unless allowed   | Allow, block, or count based on rules |
+| Cost  | Charged per usage     | No additional cost    | Charged per request & rules   |
+| Best for        | High-level security control     | Broad network control         | Protecting web applications       |  
+
+
