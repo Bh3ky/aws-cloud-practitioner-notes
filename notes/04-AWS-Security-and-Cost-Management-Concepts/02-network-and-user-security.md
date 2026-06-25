@@ -13,7 +13,7 @@
 ![balancing the goal](image-5.png)
 
 
-**Strategies for least priviledge
+**Strategies for least priviledge**
 
 - there are five steps to implementing least priviledge which include:
 
@@ -40,7 +40,7 @@
     - use a group email and multi-personal approval for added protection
 
 
-**Resource security
+**Resource security**
 
 - helps:
     - improve visibility and control
@@ -50,7 +50,7 @@
 - computing resources such as VMs execute code and need to be secured. VM permissions can be managed using IAM roles while Systems Manager can help with confguration, patch management and automation of operational tasks.
 
 
-**Credential security
+**Credential security**
 
 - AWS Secrets Manager securely manages database credentials and API keys. it automatically rotates secrets to keep them safe.
 - can also encrypt sensitive data
